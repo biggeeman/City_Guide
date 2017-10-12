@@ -1,0 +1,268 @@
+/* ================================= 
+Base Element Styles
+==================================== */
+* { 
+box-sizing: border-box;
+}
+html{
+position:relative; 
+min-height: 100%;
+}
+
+body {
+line-height: 1.6;
+color: #3a3a3a;
+
+/* text-align: center; */
+}
+
+a { 
+color: #fff;
+text-decoration: none;
+
+}
+
+/* ================================= 
+Base Layout Styles
+==================================== */
+
+.city {
+    background-color: #3acec2;
+    min-height: 400px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+.container {
+    /* border: 2px solid red; */
+
+}
+.col {
+display: inline-block;
+margin-right: -4px;           /* this move the cloumn to the right */
+vertical-align: top;
+padding-left: 1em;
+padding-right: 1em;
+/* width: 50%;	 */
+}
+.second {
+text-align: left;
+padding-bottom: 5%;
+width: 30%;
+}
+
+.third {
+text-align: left;
+padding-bottom: 5%;
+width: 40%;
+}
+
+.fourth {
+text-align: left;
+padding-bottom: 5%;
+width: 30%;
+}
+
+.head1 {
+font-size: 3.5em;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+margin-bottom: 2px;
+
+}
+.head2 {
+font-size: 2em;
+padding-bottom: 5%;
+margin-top: 5px;
+}
+.main-header {
+/*position: fixed;*/
+width: 100%;
+top: 0;
+background: white;
+/*z-index: 100;*/
+/* padding: 1em 0; */
+}
+
+.main-footer {
+text-align: center;
+padding: 1%;
+background: #d9e4ea;
+}
+
+li {
+background-color: black;
+
+margin-top: 5px;
+
+text-align: center;
+
+}
+.name, .main-nav,
+.main-nav li {
+display: inline-block;
+
+}
+.name {
+    padding-left: 5px;
+    margin-left: 10px;
+}
+
+.name a {
+padding-right: 20%;
+
+}
+
+.main-nav{
+float: right;
+vertical-align: bottom;
+padding: 1em .5em;
+margin-right: 10px;
+
+}
+
+.name a,
+.main-nav a {
+display: block; /* this make the whole element a hyperlink*/
+padding: 10px 15px;
+background-color: royalblue;
+
+}
+
+figure {
+position: relative;
+margin: 0;
+border: 0;
+width: 100%;
+
+}
+
+figcaption {
+position: absolute;
+bottom: 10px;
+right: -5px;
+width: 100%;
+height: 25%;
+background: rgba(19,43,102, .80);
+color: white;
+padding-bottom: 5%;
+font-size: .9em;
+text-align: center;
+
+}
+.one-img{
+width: 300px;
+padding-top: 1em;
+
+}
+.feat-img {
+/* width: 200px; */
+float: none;
+/* margin-right: 20px;
+margin-bottom: 10px; */
+padding: 5px;
+/* border: 2px solid gray; */
+}
+
+footer {
+position: absolute;
+bottom: 0;
+width: 100%;
+overflow:hidden;
+}
+
+
+
+/* ================================= 
+Mobile Layout Styles
+==================================== */
+
+@media screen and (max-width:644px){
+
+html {
+position:relative; 
+min-height: 100%;
+
+}
+body{
+text-align: center;
+}
+.second, .third, .fourth {
+width:90%;
+margin: 0 auto;
+padding-bottom: 5%;
+text-align: center;
+
+}
+
+.main-header {
+    
+   
+
+    /* padding: 1em 0; */
+    }
+    
+
+li {
+background-color: black;
+margin-top: 5px;
+/* display: inline-block; */
+text-align: center;
+
+}
+
+.name {
+width: 80%;
+margin: auto;
+text-align: center;
+padding-top: .5em;
+}
+
+.main-nav{
+margin-left: 1%;
+margin-right: 1%;
+}
+
+.name, .main-nav,
+.main-nav li {
+display: block;
+float: none;
+}
+
+.feat-img {
+width: 90%;
+margin: auto;
+float: none;
+
+}
+
+figcaption {
+position: relative;
+margin-left: 9%;
+width: 80%;
+background: rgba(19,43,102, .80);
+color: white;
+padding-top: 2%;
+padding-bottom: 2%;
+font-size: .8em;
+text-align: center;
+}
+
+footer {
+position: absolute;
+bottom: 0;
+width: 100%;
+overflow:hidden;
+}
+/* code is applied to collapsed heights in conainers when using floats just apply class clearfix to container etc */
+.clearfix::after{
+content: "";
+display: table;
+clear: both;
+}
+
+}
